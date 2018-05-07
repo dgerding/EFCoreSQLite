@@ -119,10 +119,14 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.1.527436" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\..\EfCoreSqlite.Database\EfCoreSqlite.Database.csproj">
+      <Project>{6b23af10-ca20-4aee-978a-b62a5ac10957}</Project>
+      <Name>EfCoreSqlite.Database</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EfCoreSqlite\EfCoreSqlite.csproj">
       <Project>{094B817A-40F7-42FC-BB76-66D1B9F39791}</Project>
       <Name>EfCoreSqlite</Name>

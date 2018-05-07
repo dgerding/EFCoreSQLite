@@ -4,6 +4,9 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using System.IO;
+using EfCoreSqlite.Database;
+using EfCoreSqlite;
 
 namespace EfCoreSqlite.iOS
 {
@@ -22,8 +25,14 @@ namespace EfCoreSqlite.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            SQLitePCL.Batteries.Init();
+
+            var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "..", "Library", "products.db");
+
+            var productsRepository = new ProductsRepository(dbPath);
+
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            LoadApplication(new App(productsRepository));
 
             return base.FinishedLaunching(app, options);
         }
