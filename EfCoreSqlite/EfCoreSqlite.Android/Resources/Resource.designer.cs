@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("EfCoreSqlite.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("EfCoreSqlite.Android.Resource", IsApplication=true)]
 
-namespace EfCoreSqlite.Droid
+namespace EfCoreSqlite.Android
 {
 	
 	
@@ -26,7 +26,7 @@ namespace EfCoreSqlite.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::EfCoreSqlite.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::EfCoreSqlite.Android.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation
