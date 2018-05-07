@@ -89,5 +89,9 @@
       <Name>EfCoreSqlite</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="UnsafeFix.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="UnsafeFix.xml" />
 </Project>
